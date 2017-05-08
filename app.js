@@ -8,6 +8,7 @@ var express         = require("express"),
 // mongoose.connect("mongodb://localhost/cert_reval");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
 //Routes
 var indexRoutes     = require("./routes/index.js");
