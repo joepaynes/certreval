@@ -2,4 +2,30 @@
 
 <h1>Dashboard</h1>
 
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;">Create a Certificate Entry</h1>
+        <div style="width:30%; margin: 25px auto;">
+            <form action="/dashboard" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Certificate Name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="type" placeholder="Type">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="date" name="date">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="note">
+                </div>
+                <div class="form-group">
+                <button class="btn btn-large btn-default btn-block btn-primary">Submit!</button>
+                </div>
+            </form>
+        <a href="/campgrounds">Go Back</a>
+        </div>
+    </div>
+</div>
+
 <% include ../partials/footer %>

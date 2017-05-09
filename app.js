@@ -3,6 +3,8 @@ var express         = require("express"),
     bodyParser      = require("body-parser"),
     mongoose        = require("mongoose");
 
+//Model Schema
+// var Certificate     = require("./models/certificate");
 
 //Setup    
 mongoose.connect("mongodb://localhost/cert_reval");
